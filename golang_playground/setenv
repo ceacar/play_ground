@@ -4,6 +4,6 @@ go_env_path="$(go env GOPATH)"
 export PATH=$PATH:$go_env_path:$go_env_path/bin
 
 #setting up packages for local vim-go ide to fully work
-ls $PWD/bin/guru || go get golang.org/x/tools/cmd/guru
-ls $PWD/bin/gogetdoc || go get github.com/zmb3/gogetdoc
-ls $PWD/bin/godog || go get github.com/DATA-DOG/godog/cmd/godog
+ls $PWD/bin/guru 2>/dev/null|| go get golang.org/x/tools/cmd/guru
+ls $PWD/bin/gogetdoc 2>/dev/null|| go get github.com/zmb3/gogetdoc
+ls $PWD/bin/godog 2>/dev/null|| go get github.com/DATA-DOG/godog/cmd/godog

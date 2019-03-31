@@ -1,2 +1,6 @@
 *.pyc
 *.class
+venv*
+*gradle
+gradle*
+lib

@@ -1,0 +1,6 @@
+version: '3'
+services:
+  airflow_webserver:
+    build: ../ubuntu_docker
+    ports:
+      - "38888:8080"
